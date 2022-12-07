@@ -1,5 +1,7 @@
 # Python UART Driver for Sensirion SFC6XXX
 
+**NOTE: the tests are currently not running (postprocessing delay is missing in the test-cases)**
+
 This repository contains the Python driver to communicate with a Sensirion SFC6XXX sensor over UART using the SHDLC protocol.
 
 <center><img src="images/product-image-dummy.jpeg" width="300px"></center>
