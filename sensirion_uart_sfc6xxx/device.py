@@ -72,7 +72,7 @@ class Sfc6xxxDeviceBase:
         physical or normalized value.
 
         :param scaling:
-            - 0x01: Flow represents a physical value. The range depends         on the flow
+            0x01: Flow represents a physical value. The range depends on the flow
             unit and calibration range.
 
         :return measured_value:
