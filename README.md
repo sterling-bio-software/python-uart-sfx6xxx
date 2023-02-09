@@ -6,31 +6,13 @@ This repository contains the Python driver to communicate with a Sensirion SFC6X
 
 Click [here](https://sensirion.com/products/catalog/?filter_category=b460ae72-20ef-488d-8be1-e66a7d53db33/) to learn more about the Sensirion SFC6XXX sensor.
 
-
-
-
-
 ## Connect the sensor
 
-You can connect your sensor over the provided USB cable.  
-For special setups check out the sensor pinout in the section below.
+1. Connect the sensor to a 24V power supply.
+2. Connect the sensor to your host by using the provided USB cable
 
-<details><summary>Sensor pinout</summary>
-<p>
-<img src="images/product-pinout-dummy.jpeg" width="300px">
-
-| *Pin* | *Cable Color* | *Name* | *Description*  | *Comments* |
-|-------|---------------|:------:|----------------|------------|
-| 1 | red | VDD | Supply Voltage | 3.3 or 5V
-| 2 | black | GND | Ground | 
-| 3 | green | RX | UART: Transmission pin for communication | 
-| 4 | yellow | TX | UART: Receiving pin for communication | 
-| 5 | blue | SEL | Interface select | Leave floating or pull to VDD to select UART
-| 6 | purple | NC | Do not connect | 
-
-
-</p>
-</details>
+Please note that due to the delays introduced by the FTDI driver you can 
+reach a maximum sampling frequency of about 20Hz with this setup.
 
 ## Documentation & Quickstart
 
