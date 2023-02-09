@@ -12,7 +12,7 @@ python_requires = '>=3.6, <4'
 # Packages that this package imports. List everything apart from standard lib packages.
 install_requires = [
     'sensirion-shdlc-driver~=0.1.5',
-    'sensirion-driver-adapters~=2.1.4',
+    'sensirion-driver-adapters>=2.1.8,<3.0',
     'sensirion-driver-support-types~=0.2.0',
 ]
 
@@ -26,8 +26,8 @@ extras_require = {
     'docs': [
         'click==8.0.4',
         'jinja2==3.0.1',
-        'sphinx~=4.2.0',
-        'sphinx-rtd-theme~=0.5.2',
+        'sphinx~=2.2.1',
+        'sphinx-rtd-theme~=0.4.3',
     ]
 }
 

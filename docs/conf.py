@@ -59,20 +59,15 @@ master_doc = 'index'
 #
 html_theme = 'sphinx_rtd_theme'
 
-# Workaround for weirdly formatted function parameters. See https://github.com/readthedocs/sphinx_rtd_theme/issues/766
-html4_writer = True
-
 html_favicon = 'favicon.ico'
 
 # -- Extension configuration -------------------------------------------------
-
-autodoc_member_order = 'bysource'
-
-autodoc_default_flags = [
-    'members',
-    'special-members',  # To see __init__()
-    'inherited-members',  # To see the methods from base classes
-]
+autodoc_default_options = {
+    'members': None,
+    'member-order': 'bysource',
+    'special-members': '__init__',
+    'undoc-members': True
+}
 
 
 def autodoc_skip_member(app, what, name, obj, skip, options):
