@@ -17,7 +17,7 @@ from sensirion_driver_adapters.shdlc_adapter.shdlc_channel import ShdlcChannel
 from sensirion_uart_sfc6xxx.device import Sfc6xxxDevice
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--serial_port', '-p', default='COM1')
+parser.add_argument('--serial-port', '-p', default='COM1')
 args = parser.parse_args()
 
 with ShdlcSerialPort(port=args.serial_port, baudrate=115200) as port:
