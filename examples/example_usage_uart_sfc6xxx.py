@@ -26,14 +26,12 @@ with ShdlcSerialPort(port=args.serial_port, baudrate=115200) as port:
     sensor.device_reset()
     time.sleep(2.0)
     serial_number = sensor.get_serial_number()
-    print(f"serial_number: {serial_number}; "
-          )
+    print(f"serial_number: {serial_number}; ")
     sensor.set_setpoint(2)
-    for i in range(10):
+    for i in range(200):
         try:
             averaged_measured_value = sensor.read_averaged_measured_value(50)
-            print(f"averaged_measured_value: {averaged_measured_value}; "
-                  )
+            print(f"averaged_measured_value: {averaged_measured_value}; ")
         except BaseException:
             continue
     sensor.close_valve()
