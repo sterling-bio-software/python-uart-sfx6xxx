@@ -17,9 +17,6 @@ Click [here](https://sensirion.com/sfc6000) to learn more about the Sensirion SF
 
 The following instructions and examples use a *SFC6000*.
 
-
-## Connect the sensor
-
 ## Connect the sensor
 
 1. Connect the sensor to a 24V power supply.
