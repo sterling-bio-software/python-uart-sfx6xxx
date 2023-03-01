@@ -17,7 +17,25 @@ are used by the driver class and not intended for direct use.
 from enum import Enum
 from sensirion_driver_adapters.transfer import Transfer
 from sensirion_driver_adapters.rx_tx_data import TxData, RxData
-from sensirion_driver_support_types.bitfield import BitField, BitfieldContainer
+
+
+class StatusCode(Enum):
+    SUCCESS = 0
+    DATA_SIZE_ERROR = 1
+    UNKNOWN_COMMAND_ERROR = 2
+    PARAMETER_ERROR = 4
+    I2C_NACK_ERROR = 41
+    I2C_MASTER_HOLD_ERROR = 42
+    I2C_CRC_ERROR = 43
+    SENSOR_DATA_WRITE_ERROR = 44
+    SENSOR_MEASURE_LOOP_NOT_RUNNING_ERROR = 45
+    INVALID_CALIBRATION_INDEX_ERROR = 51
+    SENSOR_BUSY_ERROR = 66
+    COMMAND_NOT_ALLOWED_IN_CURRENT_STATE = 67
+    FATAL_ERROR = 127
+
+    def __int__(self):
+        return self.value
 
 
 class SetSetpoint(Transfer):
