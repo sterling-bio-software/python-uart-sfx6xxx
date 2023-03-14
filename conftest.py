@@ -4,7 +4,7 @@
 import pytest
 from sensirion_driver_adapters.mocks.mock_shdlc_channel_provider import ShdlcMockPortChannelProvider
 from sensirion_driver_adapters.shdlc_adapter.shdlc_serial_channel_provider import ShdlcSerialPortChannelProvider
-from sensirion_uart_sfc6xxx.response_provider import Sfc6xxxResponseProvider
+from sensirion_uart_sfx6xxx.response_provider import Sfx6xxxResponseProvider
 
 
 def pytest_addoption(parser):
@@ -52,4 +52,4 @@ def channel_provider(request):
         yield ShdlcSerialPortChannelProvider(serial_port=serial_port,
                                              serial_baud_rate=serial_bitrate)
     else:
-        yield ShdlcMockPortChannelProvider(response_provider=Sfc6xxxResponseProvider())
+        yield ShdlcMockPortChannelProvider(response_provider=Sfx6xxxResponseProvider())
