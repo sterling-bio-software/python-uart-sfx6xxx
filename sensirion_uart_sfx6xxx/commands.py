@@ -17,7 +17,6 @@ are used by the driver class and not intended for direct use.
 from enum import Enum
 from sensirion_driver_adapters.transfer import Transfer
 from sensirion_driver_adapters.rx_tx_data import TxData, RxData
-from sensirion_driver_support_types.bitfield import BitField, BitfieldContainer
 
 
 class StatusCode(Enum):
