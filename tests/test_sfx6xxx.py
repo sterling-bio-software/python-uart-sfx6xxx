@@ -26,8 +26,7 @@ def sensor(channel_provider):
 
 def test_get_serial_number1(sensor):
     serial_number = sensor.get_serial_number()
-    print(f"serial_number: {serial_number}; "
-          )
+    print(f"serial_number: {serial_number}; ")
 
 
 def test_device_reset1(sensor):
@@ -41,7 +40,6 @@ def test_close_valve1(sensor):
 def test_set_setpoint1(sensor):
     sensor.set_setpoint(2)
     averaged_measured_value = sensor.read_averaged_measured_value(50)
-    print(f"averaged_measured_value: {averaged_measured_value}; "
-          )
+    print(f"averaged_measured_value: {averaged_measured_value}; ")
     sensor.close_valve()
 
