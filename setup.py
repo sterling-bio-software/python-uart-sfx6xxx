@@ -32,7 +32,7 @@ extras_require = {
 }
 
 # Read version number from version.py
-version_line = open("sensirion_uart_sfc6xxx/version.py", "rt").read()
+version_line = open("sensirion_uart_sfx6xxx/version.py", "rt").read()
 result = re.search(r"^version = ['\"]([^'\"]*)['\"]", version_line, re.M)
 if result:
     version_string = result.group(1)
@@ -46,17 +46,24 @@ changelog = open(os.path.join(root_path, 'CHANGELOG.rst')).read()
 long_description = readme.strip() + "\n\n" + changelog.strip() + "\n"
 
 setup(
-    name='sensirion_uart_sfc6xxx',
+    name='sensirion_uart_sfx6xxx',
     version=version_string,
     author='Sensirion',
     author_email='info@sensirion.com',
-    description='SHDLC driver for the Sensirion SFC6XXX sensor family',
+    description='SHDLC driver for the Sensirion SFX6XXX sensor family',
     license='BSD',
-    keywords="""Sensirion SFC6XXX
+    keywords="""Sensirion SFX6XXX
         SHDLC
         UART
-        SFC6xxx""",
-    url='https://sensirion.github.io/python-uart-sfc6xxx/',
+        SFC6000
+        SFC6000D-5slm
+        SFC6000D-50slm
+        SFC6000D-20slm
+        SFM6000
+        SFM6000D-20slm
+        SFM6000D-50slm
+        SFM6000D-5slm""",
+    url='https://sensirion.github.io/python-uart-sfx6xxx/',
     packages=find_packages(exclude=['tests', 'tests.*']),
     long_description=long_description,
     python_requires=python_requires,

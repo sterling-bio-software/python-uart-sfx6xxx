@@ -1,26 +1,22 @@
 Run tests
 =========
 
-Unit tests can be run with `pytest <https://pytest.org>`_.
-
-To install requried packages for testing:
+Unit tests can be run with `pytest <https://pytest.org>`_:
 
 .. code-block:: bash
 
-    pip install -e .[test]       # Install requirements
+    pip install -e .[test]                       # Install test requirements
 
-
-We provide a mock implementation of the sensor in `sensirion_uart_sfc6xxx/response_provider.py`.
-To run tests against the mock just run pytest:
+We provide a mock implementation that allows you to execute the tests for SFX6XXX without hardware.
 
 .. code-block:: bash
 
-    pytest                         # Run all tests using a mocked sensor
-    
+    pytest                                       # Run all tests for SFX6XXX using a driver mock
 
-To run the tests against real hardware, you must have your SFC6XXX sensor connected to a Serial Port of your developement machine.
-Pass the serial port used, e.g. COM1, when running the tests:
+To run the tests against real hardware, you must have your SFX6XXX sensor connected to a serial port of your
+development machine. Pass the serial port used, e.g. COM1, as command line argument when running the tests:
 
 .. code-block:: bash
 
-    pytest --serial-port=COM1       # Run all tests against connected sensor
+    pytest --serial-port=COM1                    # Run all tests for SFX6XXX an the sensor attached to COM1
+

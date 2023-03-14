@@ -1,4 +1,4 @@
-include: https://gitlab.sensirion.lokal/Sensirion/Python/ci-config-python/raw/master/gitlab-ci-template-v2.yml
+include: https://gitlab/Sensirion/Python/ci-config-python/raw/master/gitlab-ci-template-v2.yml
 stages:
   - prepare
   - build
@@ -57,7 +57,7 @@ deploy_stable:
   extends: .deploy_stable_v2
   environment:
     name: pypi.org
-    url: https://pypi.org/project/sensirion_uart_sfc6xxx/
+    url: https://pypi.org/project/sensirion_uart_sfx6xxx/
   before_script:
     - pip install twine~=1.12.1
   script:

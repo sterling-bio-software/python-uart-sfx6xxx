@@ -1,7 +1,7 @@
-Sensirion SFC6XXX SHDLC Python Driver
+Sensirion SFX6XXX SHDLC Python Driver
 =====================================
 
-This package contains the driver for the Sensirion SHDLC SFC6XXX sensor.
+This package contains the driver for the Sensirion SHDLC sensor of the SFX6XXX family.
 It provides a hardware-independent interface which works with various SHDLC transceivers.
 
 Contents
