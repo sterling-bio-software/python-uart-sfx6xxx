@@ -59,4 +59,3 @@ SFC6000/SFM6000 RS485 Guide
 
 <https://sensirion.com/resource/application_note/SHDLC_Interface_Reference_SFC6xxx_SFM6xxx_RS485>
 
-![](media/image6.emf)
