@@ -11,7 +11,7 @@ python_requires = '>=3.6, <4'
 
 # Packages that this package imports. List everything apart from standard lib packages.
 install_requires = [
-    'sensirion-shdlc-driver~=0.1.5',
+    'sensirion-shdlc-driver~=0.1.6',
     'sensirion-driver-adapters>=2.1.8,<3.0',
     'sensirion-driver-support-types~=0.2.0',
 ]
